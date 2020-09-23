@@ -52,8 +52,6 @@ public class 프린터큐 {
                 } else {
                     q.add(new Node(node.priority, node.index));
                 }
-
-
             }
         }
     }

@@ -32,7 +32,6 @@ public class 다형성 {
 
     }
 
-
     public static void main(String[] args) {
         Super sp = new Super();
         Child ch = new Child();

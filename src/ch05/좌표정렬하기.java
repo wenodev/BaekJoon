@@ -32,22 +32,17 @@ public class 좌표정렬하기 {
         Collections.sort(nodeList, new Comparator<Node>() {
             @Override
             public int compare(Node o1, Node o2) {
-
                 if (o1.coordinate1 == o2.coordinate1){
                     return Integer.compare(o1.coordinate2, o2.coordinate2);
                 }
-
                 return Integer.compare(o1.coordinate1, o2.coordinate1);
             }
-
-
         });
 
         for (Node node : nodeList){
             System.out.println(node.coordinate1);
             System.out.println(node.coordinate2);
         }
-
 
     }
 }

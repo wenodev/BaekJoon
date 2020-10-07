@@ -2,25 +2,25 @@ package ch05;
 
 import java.util.*;
 
-public class 나이순정렬 {
+class Node{
 
+    int age;
+    String name;
 
-    static class Node{
-        int age;
-        String name;
-
-        Node(int age, String name){
-            this.age = age;
-            this.name = name;
-        }
-
+    Node(int age, String name){
+        this.age = age;
+        this.name = name;
     }
 
 
+}
+
+public class 나이순정렬 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();
-
         List<Node> nodeList = new ArrayList<>();
 
         for (int i=0; i<count; i++){
@@ -40,7 +40,6 @@ public class 나이순정렬 {
             System.out.println(node.age);
             System.out.println(node.name);
         }
-
 
     }
 }

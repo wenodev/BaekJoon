@@ -1,4 +1,4 @@
-package 아무코드;
+package 아무코드.program;
 
 import java.util.*;
 

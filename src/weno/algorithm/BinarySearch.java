@@ -1,4 +1,4 @@
-package 아무코드.algorithm;
+package weno.algorithm;
 
 public class BinarySearch {
 

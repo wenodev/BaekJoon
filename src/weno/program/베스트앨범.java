@@ -1,4 +1,4 @@
-package 아무코드.program;
+package weno.program;
 
 import java.util.*;
 

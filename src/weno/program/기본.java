@@ -1,6 +1,6 @@
-package 아무코드.program;
+package weno.program;
 
-public class 기능개발 {
+public class 기본 {
 
     public static void solution(){
 

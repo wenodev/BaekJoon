@@ -1,7 +1,6 @@
-package 아무코드.Collection;
+package weno.Collection;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Employee {
 

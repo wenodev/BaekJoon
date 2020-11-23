@@ -1,4 +1,4 @@
-package 아무코드.exception;
+package weno.exception;
 
 public class Main {
 

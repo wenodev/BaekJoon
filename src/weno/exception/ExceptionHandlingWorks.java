@@ -1,4 +1,4 @@
-package 아무코드.exception;
+package weno.exception;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,6 +1,6 @@
-package 아무코드.Collection.comparator;
+package weno.Collection.comparator;
 
-import 아무코드.Collection.Employee;
+import weno.Collection.Employee;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

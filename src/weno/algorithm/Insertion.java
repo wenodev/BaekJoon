@@ -13,16 +13,8 @@ public class Insertion {
                 data[j+1] = data[j];
             }
             data[j+1] = temp;
-
-            for (int k = 0; k < data.length; k++) {
-                System.out.print(data[k] + " ");
-            }
-            System.out.println(" ");
-
         }
-
     }
-
 
     public static void main(String[] args) {
 

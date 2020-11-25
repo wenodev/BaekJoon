@@ -1,4 +1,4 @@
-package weno.datastructure.graph;
+package weno.datastructure.graph.list;
 
 import java.util.ArrayList;
 
@@ -17,9 +17,10 @@ class ListGraph {
         // graph[1] -> 2 -> 3
         // graph[2] -> 1 -> 3 -> 4
         // graph[3] -> 1 -> 2 -> 4 -> 5
-        this.listGraph = new ArrayList<ArrayList<Integer>>(); // 그래프 생성
-        for(int i=0; i<initSize+1; i++) {
-            listGraph.add(new ArrayList<Integer>());
+
+        this.listGraph = new ArrayList<ArrayList<Integer>>();
+        for (int i = 0; i < initSize+1; i++) {
+            listGraph.add(new ArrayList<>());
         }
     }
 
@@ -35,13 +36,13 @@ class ListGraph {
 
     // 그래프 추가 (양방향)
     public void put(int x, int y) {
-        listGraph.get(x).add(y);
-        listGraph.get(y).add(x);
+        this.listGraph.get(x).add(y);
+        this.listGraph.get(y).add(x);
     }
 
     // 그래프 추가 (단방향)
     public void putSingle(int x, int y) {
-        listGraph.get(x).add(y);
+        this.listGraph.get(x).add(y);
     }
 
     // 그래프 출력 (인접리스트)

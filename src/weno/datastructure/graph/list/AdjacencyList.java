@@ -1,4 +1,4 @@
-package weno.datastructure.graph;
+package weno.datastructure.graph.list;
 
 public class AdjacencyList {
 

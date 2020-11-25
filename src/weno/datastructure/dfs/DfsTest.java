@@ -1,7 +1,6 @@
 package weno.datastructure.dfs;
 
 public class DfsTest {
-
     public static void main(String[] args) {
 
         Graph g = new Graph(4);
@@ -14,8 +13,5 @@ public class DfsTest {
         g.addEdge(3, 3);
 
         g.DFS(0); /* 주어진 노드를 시작 노드로 DFS 탐색 */
-
     }
-
-
 }

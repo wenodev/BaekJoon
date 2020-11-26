@@ -16,6 +16,9 @@ public class AdjacencyArray {
         adjArr.put(4, 6);
 
         adjArr.printGraphToAdjArr();
+        System.out.println("=======");
+
+        System.out.println(adjArr.getGraph()[1][2]);
     }
 
 }

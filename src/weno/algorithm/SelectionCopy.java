@@ -1,19 +1,19 @@
 package weno.algorithm;
 
-public class Selection {
+public class SelectionCopy {
 
     public static void selectionSort(int[] data){
-        int temp;
-        for (int i = 0; i < data.length-1; i++) {
 
+        for (int i = 0; i < data.length; i++) {
             for (int j = i+1; j < data.length; j++) {
                 if (data[i] > data[j]){
-                    temp = data[i];
+                    int temp = data[i];
                     data[i] = data[j];
                     data[j] = temp;
                 }
             }
         }
+
     }
 
 

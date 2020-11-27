@@ -19,12 +19,10 @@ public class Graph {
 
     }
 
-    /** 노드를 연결 v->w */
     void addEdge(int x, int y) {
         adj[x].add(y);
     }
 
-    /** s를 시작 노드으로 한 BFS로 탐색하면서 탐색한 노드들을 출력 */
     void BFS(int data) {
 
         LinkedList<Integer> queue = new LinkedList<>();
@@ -49,16 +47,8 @@ public class Graph {
                     queue.add(num);
                 }
 
-
-
             }
-
-
-
-
         }
-
-
     }
 
     void print() {

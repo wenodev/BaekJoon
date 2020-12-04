@@ -38,7 +38,7 @@ public class 타겟넘버2 {
         }
 
         public int countValue(Node node,int target) {
-            int cnt =0;
+
 
             if(!node.isTerminal()) {
                 return countValue(node.leftNode, target) +countValue(node.rightNode, target);
@@ -49,6 +49,7 @@ public class 타겟넘버2 {
                 }
             }
             return 0;
+
         }
 
         public int getValue() {

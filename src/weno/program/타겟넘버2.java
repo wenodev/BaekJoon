@@ -2,8 +2,8 @@ package weno.program;
 
 public class 타겟넘버2 {
 
-    static class Node
-    {
+    static class Node {
+
         private int value;
         private Node rightNode ;   //+ 노드
         private Node leftNode ;    //- 노드
@@ -12,16 +12,17 @@ public class 타겟넘버2 {
             value=0;
         }
 
-        public Node(int value)
-        {
-            this.value =value;
+        public Node(int value) {
+            this.value = value;
             this.rightNode = null;
             this.leftNode = null;
         }
+
         /*
          * 다음 depth의 노드를 셋팅 한다.
          * 현재 노드가 leaf 노드면 다음 노드를 셋팅 한다.
          */
+
         public void setNode(Node node,int val) {
             if(!node.isTerminal()) {
                 setNode(node.leftNode,val);
@@ -39,9 +40,8 @@ public class 타겟넘버2 {
 
         public int countValue(Node node,int target) {
 
-
             if(!node.isTerminal()) {
-                return countValue(node.leftNode, target) +countValue(node.rightNode, target);
+                return countValue(node.leftNode, target) + countValue(node.rightNode, target);
             }
             else {
                 if(node.getValue() == target) {

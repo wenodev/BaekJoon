@@ -9,8 +9,6 @@ public class BfsArray {
         boolean[][] visited;
     }
 
-
-
     public static void main(String[] args) {
         BFS bfs = new BFS();
 
